@@ -155,7 +155,7 @@ section{padding:7rem 5rem;}
 /* ── EXPERIENCE ── */
 #experience{background:var(--white);}
 .exp-list{display:flex;flex-direction:column;}
-.exp-row{display:grid;grid-template-columns:200px 1fr;gap:2.5rem;padding:2.5rem 0;border-bottom:1px solid var(--rule);opacity:0;transform:translateY(14px);transition:opacity .6s var(--ease),transform .6s var(--ease);}
+.exp-row{display:grid;grid-template-columns:200px 1fr;gap:2.5rem;padding:2.5rem 0;border-bottom:1px solid var(--rule);opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease);}
 .exp-row.vis{opacity:1;transform:translateY(0);}
 .exp-row:first-child{padding-top:0;}
 .exp-meta-date{font-size:.78rem;color:var(--muted);line-height:1.5;}
@@ -182,7 +182,7 @@ section{padding:7rem 5rem;}
 /* ── BLOG ── */
 #blog{background:var(--white);}
 .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
-.bc{text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:.9rem;padding-bottom:2rem;border-bottom:1px solid var(--rule);opacity:0;transform:translateY(14px);transition:opacity .6s var(--ease),transform .6s var(--ease);}
+.bc{text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:.9rem;padding-bottom:2rem;border-bottom:1px solid var(--rule);opacity:1;transform:translateY(0);transition:opacity .6s var(--ease),transform .6s var(--ease);}
 .bc.vis{opacity:1;transform:translateY(0);}
 .bc:hover .bc-title{color:var(--green);}
 .bc-thumb{aspect-ratio:16/9;background:var(--surface);border:1px solid var(--rule);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:2rem;}
@@ -656,9 +656,9 @@ footer{background:var(--ink);border-top:1px solid rgba(248,247,244,.07);padding:
       <p style="font-size:.9rem;color:rgba(248,247,244,.42);line-height:1.85;margin-bottom:2rem;font-weight:300;">Open to collaborations, freelance projects, internships, and the right full-time opportunity.</p>
       <div class="avail-row"><span class="avail-dot"></span>Currently available — typically replies within 24 hours</div>
       <div class="c-socials">
-        <a class="cs-item" href="mailto:mail.raosahil@gmail.com">
+        <a class="cs-item" href="/cdn-cgi/l/email-protection#6409050d084a16050b17050c0d08240309050d084a070b09">
           <span class="cs-icon">✉️</span>
-          <div><div class="cs-lbl">Email</div><div class="cs-val">mail.raosahil@gmail.com</div></div>
+          <div><div class="cs-lbl">Email</div><div class="cs-val"><span class="__cf_email__" data-cfemail="c5a8a4aca9ebb7a4aab6a4adaca985a2a8a4aca9eba6aaa8">[email&#160;protected]</span></div></div>
         </a>
         <a class="cs-item" href="https://linkedin.com/in/sahil-yadav-raosahil" target="_blank">
           <span class="cs-icon">💼</span>
@@ -718,7 +718,7 @@ footer{background:var(--ink);border-top:1px solid rgba(248,247,244,.07);padding:
   </nav>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* cursor ring */
 const ring = document.getElementById('cur-ring');
 let mx=0,my=0,rx=0,ry=0;
@@ -736,11 +736,4 @@ document.querySelectorAll('a,button,.proj-row-item,.sk-col,.tc-card,.chip,.tc').
 /* scroll bar + nav */
 const bar=document.getElementById('bar'),nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>{
-  bar.style.width=(window.scrollY/(document.body.scrollHeight-window.innerHeight)*100)+'%';
-  nav.classList.toggle('stuck',window.scrollY>50);
-});
-
-/* scroll reveal */
-const io=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}});
-},{threshold:.1})
+  bar.style.width=(window.scrollY/(document.body.scrollHeight-window.innerHeight
